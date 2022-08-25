@@ -36,3 +36,7 @@ Internally it uses a PostgreSQL database to store the data and S3 to store files
 
 - After your app is deployed, visit the `/admin` endpoint to login using the initial admin user you entered during config.
 - Railway's filesystem is ephemeral which is why any changes to the filesystem are not persisted between deploys. This is why, this example uses S3 for storage.
+
+## Credit
+
+Originally forked from [https://github.com/azrikahar/directus-railway-starter](https://github.com/azrikahar/directus-railway-starter) with S3 and Slugs support built in off the bat.
