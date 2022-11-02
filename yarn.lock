@@ -2,6 +2,22 @@
 # yarn lockfile v1
 
 
+"@authenio/samlify-node-xmllint@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@authenio/samlify-node-xmllint/-/samlify-node-xmllint-2.0.0.tgz#74bf7dc540506a25e842ae72d492afec627b3a6d"
+  integrity sha512-V9cQ0CHqu3JwOmbSecGPUnzIES5kHxD00FEZKnWh90ksQUJG5/TscV2r9XLbKp7MlRMOSUfWxecM35xPSLFdSg==
+  dependencies:
+    node-xmllint "^1.0.0"
+
+"@authenio/xml-encryption@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@authenio/xml-encryption/-/xml-encryption-2.0.1.tgz#81dab8636370490a63f185da74ba22b2dec742e4"
+  integrity sha512-NJi1gH2NxNp8GhMFYsFMKfKrMQoRKir8pcZu6SwipsIjUu9sYI2uh+MMmQU/8ubyy84ptcoQ2cmB5FBQZLKkMQ==
+  dependencies:
+    "@xmldom/xmldom" "^0.8.3"
+    escape-html "^1.0.3"
+    xpath "0.0.32"
+
 "@aws-crypto/ie11-detection@^2.0.0":
   version "2.0.0"
   resolved "https://registry.npmjs.org/@aws-crypto/ie11-detection/-/ie11-detection-2.0.0.tgz"
@@ -875,53 +891,61 @@
   resolved "https://registry.npmjs.org/@babel/parser/-/parser-7.18.11.tgz"
   integrity sha512-9JKn5vN+hDt0Hdqn1PiJ2guflwP+B6Ga8qbDuoF0PzzVhrzsKIJo8yGqVk6CmMHiMei9w1C1Bp9IMJSIK+HPIQ==
 
-"@directus/app@9.19.2":
-  version "9.19.2"
-  resolved "https://registry.yarnpkg.com/@directus/app/-/app-9.19.2.tgz#75b7a5f89e3f71c34e3d1ab520650a1aaa4f538f"
-  integrity sha512-ufpIeRNW/xd8ZnOSIIO+meYMJWNbVsv4CKwjkYVleZPNND1EqfTNp7Frosgs2TBImEPUH/ijrMYmbTrgyFwq2Q==
+"@directus/app@9.20.1":
+  version "9.20.1"
+  resolved "https://registry.yarnpkg.com/@directus/app/-/app-9.20.1.tgz#036a62c082b2e7245c1bc84aaeae7e21110fd83b"
+  integrity sha512-6s30z8kHeCTNwUnJgByV1G7YQ78Sbv4lYAXfjkcaMsjEkfoLOwS8j/FXsESnj700BoEWtkVeGYCMVhGBqJ0TTw==
 
-"@directus/drive-azure@9.19.2":
-  version "9.19.2"
-  resolved "https://registry.yarnpkg.com/@directus/drive-azure/-/drive-azure-9.19.2.tgz#d59410740c5af10842b6e26975e38cd62d03c127"
-  integrity sha512-Ir4cBa8hBZcdmWfLfQ9CR1iEtAz6gjfqqB805bKW98cg8BAU+brPlM7PHZIOkFQx1kEvrj8yiJbU8vg2w+f1QQ==
+"@directus/drive-azure@9.20.1":
+  version "9.20.1"
+  resolved "https://registry.yarnpkg.com/@directus/drive-azure/-/drive-azure-9.20.1.tgz#fca762c1b1ffefaa3de746c0782b3534eddd1ee0"
+  integrity sha512-4jOQW+MWf2WSkEBXRXxgGCKjNZ6WrEcV6txHthpfSouTcox++jP6zZs+Vc1/w8fbacsawevC1LAJSZ8VJy1AUA==
   dependencies:
     "@azure/storage-blob" "12.12.0"
-    "@directus/drive" "9.19.2"
+    "@directus/drive" "9.20.1"
     normalize-path "3.0.0"
 
-"@directus/drive-gcs@9.19.2":
-  version "9.19.2"
-  resolved "https://registry.yarnpkg.com/@directus/drive-gcs/-/drive-gcs-9.19.2.tgz#cb25d54848fde22f4378066b8f3a353a71c2aa88"
-  integrity sha512-wy5G0AAFp7ePLtO4gtwH6wMZa7Q1yt5OPcdELLbHdgn/txNZ9Ecq1liw2ZAZaae+ju5i1BLXrXgqPEona2Jcmg==
+"@directus/drive-gcs@9.20.1":
+  version "9.20.1"
+  resolved "https://registry.yarnpkg.com/@directus/drive-gcs/-/drive-gcs-9.20.1.tgz#d5ef0bd948e2788cba4ac0933529dc73debf3225"
+  integrity sha512-PRil3RY1cJeZtY2UK68ybQ6mSvBNRwBO5rzRnBXFfwh0PNxpdPRdHRg03ZxgoY2FvSo/c4ZGuWvTdqqfXf6YVw==
   dependencies:
-    "@directus/drive" "9.19.2"
+    "@directus/drive" "9.20.1"
     "@google-cloud/storage" "6.5.3"
     lodash "4.17.21"
     normalize-path "3.0.0"
 
-"@directus/drive-s3@9.19.2":
-  version "9.19.2"
-  resolved "https://registry.yarnpkg.com/@directus/drive-s3/-/drive-s3-9.19.2.tgz#b763b3a69dd34c40db3f27ccd52a441bfc0bfedb"
-  integrity sha512-2k8c8Ne+uwIgO9YP7yiLWjgcsL4aJy7M0MHpcRmmsLKcwNGWrLSveeuJhpfLXR1hc4qW5AMXXTLMzm8pzX7ZCw==
+"@directus/drive-s3@9.20.0":
+  version "9.20.0"
+  resolved "https://registry.yarnpkg.com/@directus/drive-s3/-/drive-s3-9.20.0.tgz#27886d30344e6f5f400b8bb091e2c875b92c36f1"
+  integrity sha512-HxVdTHaRuZPTT95wihX98AWm51iaUUViS2FcMIDoNdBGQ6CGuWHIPb6anw0TZsz68TIylpd0BKf1KiyOu36bRA==
   dependencies:
-    "@directus/drive" "9.19.2"
+    "@directus/drive" "9.20.0"
     aws-sdk "2.1236.0"
     normalize-path "3.0.0"
 
-"@directus/drive@9.19.2":
-  version "9.19.2"
-  resolved "https://registry.yarnpkg.com/@directus/drive/-/drive-9.19.2.tgz#5ecdb9ea8bfd9146dfa2a26f2c56a92324636609"
-  integrity sha512-V6g95odvEjs+knBuIOngevhFtqFpce3fhw1Iy29BFnBUCKxEgS8VIRTXVwCDqf37RapWUfAjbUtz8K2PF5tKjg==
+"@directus/drive@9.20.0":
+  version "9.20.0"
+  resolved "https://registry.yarnpkg.com/@directus/drive/-/drive-9.20.0.tgz#f2fbbedfa9d746cbaeca842f3bf98083fe75653a"
+  integrity sha512-JkC7tuBla7fkPpNckVADXC/ZkYBBm5ln3BPaFVVrdYB7i2mfwaHZqvT7MtpiO/rs3fSJVJaV27mipzmDGiSsOA==
   dependencies:
     fs-extra "10.1.0"
     node-exceptions "4.0.1"
 
-"@directus/extensions-sdk@9.19.2":
-  version "9.19.2"
-  resolved "https://registry.yarnpkg.com/@directus/extensions-sdk/-/extensions-sdk-9.19.2.tgz#6d53b6050d62d67fe04b1c6878bbcbbe566f3f30"
-  integrity sha512-S0jOJL+23lBdFveL1lbgql8gnSMP7rNBZkbeG+lfqq5xftpxozFTjiU9e78tOjkpTJ4z89x0f7o18FsyhnJpAQ==
+"@directus/drive@9.20.1":
+  version "9.20.1"
+  resolved "https://registry.yarnpkg.com/@directus/drive/-/drive-9.20.1.tgz#2b54c4974ef4d7d4f4d8ea732f1a5f685f171b74"
+  integrity sha512-va3BVS+QoyJZLKafoZXMr8iveX0ST90hlTtuibhF4qVsOx0CBnn64sFd6Majixil5ksP6e7m3Msu6QvAYNh2Pg==
   dependencies:
-    "@directus/shared" "9.19.2"
+    fs-extra "10.1.0"
+    node-exceptions "4.0.1"
+
+"@directus/extensions-sdk@9.20.1":
+  version "9.20.1"
+  resolved "https://registry.yarnpkg.com/@directus/extensions-sdk/-/extensions-sdk-9.20.1.tgz#f9dd5c790414b506ccda449ceacad0552087bad3"
+  integrity sha512-W4lj2wL/xjrp/2MErVwvCVr1uBOiV8wDYHiAj/DPqU9DgNjIMSZoChro+jzxjzaRsjnCjrAzlnwOL6izpTVQuQ==
+  dependencies:
+    "@directus/shared" "9.20.1"
     "@rollup/plugin-commonjs" "23.0.0"
     "@rollup/plugin-json" "5.0.0"
     "@rollup/plugin-node-resolve" "15.0.0"
@@ -943,19 +967,19 @@
   resolved "https://registry.yarnpkg.com/@directus/format-title/-/format-title-9.15.0.tgz#18e6038c79118302f62da48f53f8c120c493873f"
   integrity sha512-2korjLjPrVA3kZlMiGWIJwWdiqwK5t9d84cMriUW4HIWDIvexjHRpOMX0Ju/89RqdXwIYbR19xqyTlK2GKQbIw==
 
-"@directus/schema@9.19.2":
-  version "9.19.2"
-  resolved "https://registry.yarnpkg.com/@directus/schema/-/schema-9.19.2.tgz#c289a401aa46335237c00d8c9104bf37bdbd9bfc"
-  integrity sha512-wMjG3TgR4rue16Nxu1VBgIMs/bKeZ+YPRSnzKedJtg1O5EE/d7X9BGrC1gO90Wh7f7shPWizsGJ40ysJmZOWDA==
+"@directus/schema@9.20.1":
+  version "9.20.1"
+  resolved "https://registry.yarnpkg.com/@directus/schema/-/schema-9.20.1.tgz#44700ba3ae35bbf7eb7332bcb186d8e8a6878e12"
+  integrity sha512-WPBgwufnjYVq7mjcUHa0h+W9zN6YMfjNfe00536uKRUcXkUsQClEcdVuYjTRSody/YZBt7EsBG9P3N7PqsQ23Q==
   dependencies:
     knex "2.3.0"
     knex-schema-inspector "3.0.0"
     lodash "4.17.21"
 
-"@directus/shared@9.19.2":
-  version "9.19.2"
-  resolved "https://registry.yarnpkg.com/@directus/shared/-/shared-9.19.2.tgz#f69c114a9de83b9676fc3e6aebcd36dcb827995f"
-  integrity sha512-aOgenFokDHBJL3OwNR+/8LyTP6q1bPA9F+UmPBmuOy/SAjvk4kL2wEZ2XasXsR9TiY+iSVsmhJLshaw43KZRhg==
+"@directus/shared@9.20.1":
+  version "9.20.1"
+  resolved "https://registry.yarnpkg.com/@directus/shared/-/shared-9.20.1.tgz#d14766a08010348ce6c39d232854fd062d1cb730"
+  integrity sha512-WPZXGomsnw1vtol2F1VSAL6A9eUilx7hpjmUJq0w88wVepPj17EbLo5Hnm36flK2QguCbfYm9/2MzMF6dO8xQQ==
   dependencies:
     axios "1.1.3"
     date-fns "2.29.3"
@@ -973,10 +997,10 @@
     vue-i18n "9.2.2"
     vue-router "4.1.5"
 
-"@directus/specs@9.19.2":
-  version "9.19.2"
-  resolved "https://registry.yarnpkg.com/@directus/specs/-/specs-9.19.2.tgz#02984b9a838f181fc9f561701ade5ccecd786c5a"
-  integrity sha512-tVIcUe5hWhYph1fxTd1h/iH2vQs1wyIM/fqZlff4AdMlKnMtGHwuaZ1CaWwa8jU/0BLmrL5UF2TGEq7/SyWv8A==
+"@directus/specs@9.20.1":
+  version "9.20.1"
+  resolved "https://registry.yarnpkg.com/@directus/specs/-/specs-9.20.1.tgz#18a7fba815e4d0c7fd80cd30b64d4b025034c832"
+  integrity sha512-v0xTbhIqFZL8aaX1L5Klh3TGjwB4PglDLZUOBcryTkt45oqJyhcCd+CoHZIWePn3c0ZWJ57b9r2x8/9mqmwipw==
   dependencies:
     openapi3-ts "3.1.1"
 
@@ -1600,6 +1624,11 @@
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.2.41.tgz#fbc95422df654ea64e8428eced96ba6ad555d2bb"
   integrity sha512-W9mfWLHmJhkfAmV+7gDjcHeAWALQtgGT3JErxULl0oz6R6+3ug91I7IErs93eCFhPCZPHBs4QJS7YWEV7A3sxw==
 
+"@xmldom/xmldom@^0.8.3", "@xmldom/xmldom@^0.8.5":
+  version "0.8.5"
+  resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.8.5.tgz#7f4b797cfda39355b512b4cfcc66b49b5d93d5f3"
+  integrity sha512-0dpjDLeCXYThL2YhqZcd/spuwoH+dmnFoND9ZxZkAYxp1IJUB2GP16ow2MJRsjVxy8j1Qv8BJRmN5GKnbDKCmQ==
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/abbrev/-/abbrev-1.1.1.tgz"
@@ -2073,7 +2102,7 @@ camelcase@5.0.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.0.0.tgz#03295527d58bd3cd4aa75363f35b2e8d97be2f42"
   integrity sha512-faqwZqnWxbxn+F1d399ygeamQNy3lPp/H9H6rNrqYh4FSVCtcY+3cub1MxA8o9mDd55mM8Aghuu/kuyYA6VTsA==
 
-camelcase@6.3.0:
+camelcase@6.3.0, camelcase@^6.2.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.3.0.tgz#5685b95eb209ac9c0c177467778c9c84df58ba9a"
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
@@ -2618,22 +2647,23 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
-directus@^9.19.2:
-  version "9.19.2"
-  resolved "https://registry.yarnpkg.com/directus/-/directus-9.19.2.tgz#0aec0499f58f3466cc53b3517a937c952b033035"
-  integrity sha512-k2ZJCkpLhQCLjU12CdN8gFuKJ3jLMuxjN2goLDFGjBN7wvcB9uS1mcVxWRphW+18YZpnQDHrZaw7ymIZ5klFcQ==
+directus@^9.20.1:
+  version "9.20.1"
+  resolved "https://registry.yarnpkg.com/directus/-/directus-9.20.1.tgz#37ffede649362e062f65cb6ed70c02640343e264"
+  integrity sha512-pcZWRmL7AJKtEejcNzG/BsucDpofsPhSkpAdDi/ruj6Ry827LGMDa4zAzuG6eWmVQ/LCJUyRiJ2qCmrBjzc3+A==
   dependencies:
+    "@authenio/samlify-node-xmllint" "2.0.0"
     "@aws-sdk/client-ses" "3.190.0"
-    "@directus/app" "9.19.2"
-    "@directus/drive" "9.19.2"
-    "@directus/drive-azure" "9.19.2"
-    "@directus/drive-gcs" "9.19.2"
-    "@directus/drive-s3" "9.19.2"
-    "@directus/extensions-sdk" "9.19.2"
+    "@directus/app" "9.20.1"
+    "@directus/drive" "9.20.1"
+    "@directus/drive-azure" "9.20.1"
+    "@directus/drive-gcs" "9.20.1"
+    "@directus/drive-s3" "9.20.0"
+    "@directus/extensions-sdk" "9.20.1"
     "@directus/format-title" "9.15.0"
-    "@directus/schema" "9.19.2"
-    "@directus/shared" "9.19.2"
-    "@directus/specs" "9.19.2"
+    "@directus/schema" "9.20.1"
+    "@directus/shared" "9.20.1"
+    "@directus/specs" "9.20.1"
     "@godaddy/terminus" "4.11.2"
     "@rollup/plugin-alias" "4.0.0"
     "@rollup/plugin-virtual" "3.0.0"
@@ -2700,6 +2730,7 @@ directus@^9.19.2:
     rate-limiter-flexible "2.3.12"
     resolve-cwd "3.0.0"
     rollup "3.2.3"
+    samlify "2.8.6"
     sanitize-html "2.7.2"
     sharp "0.31.1"
     snappy "7.2.0"
@@ -2900,7 +2931,7 @@ escalade@^3.1.1:
   resolved "https://registry.npmjs.org/escalade/-/escalade-3.1.1.tgz"
   integrity sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==
 
-escape-html@~1.0.3:
+escape-html@^1.0.3, escape-html@~1.0.3:
   version "1.0.3"
   resolved "https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz"
   integrity sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow==
@@ -4724,7 +4755,7 @@ node-fetch@^2.6.1, node-fetch@^2.6.7:
   dependencies:
     whatwg-url "^5.0.0"
 
-node-forge@^1.3.1:
+node-forge@^1.3.0, node-forge@^1.3.1:
   version "1.3.1"
   resolved "https://registry.npmjs.org/node-forge/-/node-forge-1.3.1.tgz"
   integrity sha512-dPEtOeMvF9VMcYV/1Wb8CPoVAXtp6MKMlcbAt4ddqmGqUJ6fQZFXkNZNkNlfevtNkGtaSoXf/vNNNSvgrdXwtA==
@@ -4754,6 +4785,18 @@ node-releases@^2.0.6:
   version "2.0.6"
   resolved "https://registry.npmjs.org/node-releases/-/node-releases-2.0.6.tgz"
   integrity sha512-PiVXnNuFm5+iYkLBNeq5211hvO38y63T0i2KKh2KnUs3RpzJ+JtODFjkD8yjLwnDkTYF1eKXheUwdssR+NRZdg==
+
+node-rsa@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/node-rsa/-/node-rsa-1.1.1.tgz#efd9ad382097782f506153398496f79e4464434d"
+  integrity sha512-Jd4cvbJMryN21r5HgxQOpMEqv+ooke/korixNNK3mGqfGJmy0M77WDDzo/05969+OkMy3XW1UuZsSmW9KQm7Fw==
+  dependencies:
+    asn1 "^0.2.4"
+
+node-xmllint@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/node-xmllint/-/node-xmllint-1.0.0.tgz#f680457eb0166a3d06996f1242d34d47000fe55b"
+  integrity sha512-71UV2HRUP+djvHpdyatiuv+Y1o8hI4ZI7bMfuuoACMLR1JJCErM4WXAclNeHd6BgHXkqeqnnAk3wpDkSQWmFXw==
 
 nodemailer-mailgun-transport@2.1.5:
   version "2.1.5"
@@ -5030,6 +5073,11 @@ packet-reader@1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/packet-reader/-/packet-reader-1.0.0.tgz"
   integrity sha512-HAKu/fG3HpHFO0AA8WE8q2g+gBJaZ9MG7fcKk+IJPLTGAD6Psw4443l+9DGRbOIh3/aXr7Phy0TjilYivJo5XQ==
+
+pako@^1.0.10:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
+  integrity sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==
 
 parent-module@^1.0.0:
   version "1.0.1"
@@ -6044,6 +6092,22 @@ safe-stable-stringify@^2.3.1:
   resolved "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
+samlify@2.8.6:
+  version "2.8.6"
+  resolved "https://registry.yarnpkg.com/samlify/-/samlify-2.8.6.tgz#ca915ca5ef8823e502fb0dfdeaf3fe16fbddbf31"
+  integrity sha512-G40xfnFvn4Y34Wlwwui004f+yER7tjWn6wioGGB6LcDHz3bssNrARBmPDkAr5HyMMkREg/GQo7I6tGfAjsYMew==
+  dependencies:
+    "@authenio/xml-encryption" "^2.0.1"
+    "@xmldom/xmldom" "^0.8.3"
+    camelcase "^6.2.0"
+    node-forge "^1.3.0"
+    node-rsa "^1.1.1"
+    pako "^1.0.10"
+    uuid "^8.3.2"
+    xml "^1.0.1"
+    xml-crypto "^3.0.0"
+    xpath "^0.0.32"
+
 sanitize-html@2.7.2:
   version "2.7.2"
   resolved "https://registry.yarnpkg.com/sanitize-html/-/sanitize-html-2.7.2.tgz#54c5189af75e3237d996e4b9a5e3eaad12c7f7fc"
@@ -7013,6 +7077,14 @@ wrappy@1:
   resolved "https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz"
   integrity sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==
 
+xml-crypto@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/xml-crypto/-/xml-crypto-3.0.1.tgz#1d4852b040e80413d8058e2917eddd9f17a00b8b"
+  integrity sha512-7XrwB3ujd95KCO6+u9fidb8ajvRJvIfGNWD0XLJoTWlBKz+tFpUzEYxsN+Il/6/gHtEs1RgRh2RH+TzhcWBZUw==
+  dependencies:
+    "@xmldom/xmldom" "^0.8.5"
+    xpath "0.0.32"
+
 xml2js@0.4.19:
   version "0.4.19"
   resolved "https://registry.npmjs.org/xml2js/-/xml2js-0.4.19.tgz"
@@ -7029,6 +7101,11 @@ xml2js@^0.4.19:
     sax ">=0.6.0"
     xmlbuilder "~11.0.0"
 
+xml@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/xml/-/xml-1.0.1.tgz#78ba72020029c5bc87b8a81a3cfcd74b4a2fc1e5"
+  integrity sha512-huCv9IH9Tcf95zuYCsQraZtWnJvBtLVE0QHMOs8bWyZAFZNDcYjsPq1nEx8jKA9y+Beo9v+7OBPRisQTjinQMw==
+
 xmlbuilder@~11.0.0:
   version "11.0.1"
   resolved "https://registry.npmjs.org/xmlbuilder/-/xmlbuilder-11.0.1.tgz"
@@ -7043,6 +7120,11 @@ xmlcreate@^2.0.4:
   version "2.0.4"
   resolved "https://registry.npmjs.org/xmlcreate/-/xmlcreate-2.0.4.tgz"
   integrity sha512-nquOebG4sngPmGPICTS5EnxqhKbCmz5Ox5hsszI2T6U5qdrJizBc+0ilYSEjTSzU0yZcmvppztXe/5Al5fUwdg==
+
+xpath@0.0.32, xpath@^0.0.32:
+  version "0.0.32"
+  resolved "https://registry.yarnpkg.com/xpath/-/xpath-0.0.32.tgz#1b73d3351af736e17ec078d6da4b8175405c48af"
+  integrity sha512-rxMJhSIoiO8vXcWvSifKqhvV96GjiD5wYb8/QHdoRyQvraTpp4IEv944nhGausZZ3u7dhQXteZuZbaqfpB7uYw==
 
 xtend@^4.0.0:
   version "4.0.2"
