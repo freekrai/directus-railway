@@ -6,7 +6,7 @@
     "start": "npx directus start"
   },
   "dependencies": {
-    "directus": "^9.20.1",
+    "directus": "^9.20.3",
     "pg": "^8.8.0"
   }
 }
