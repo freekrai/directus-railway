@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "directus": "^10.2.1",
+    "directus-extension-computed-interface": "^1.7.0",
+    "directus-extension-upsert": "^1.0.4",
+    "directus-extension-wpslug-interface": "^1.1.0",
     "pg": "^8.11.0"
   }
 }
