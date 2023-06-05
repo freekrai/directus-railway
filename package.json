@@ -5,8 +5,11 @@
   "scripts": {
     "start": "npx directus start"
   },
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
     "directus": "^10.2.1",
-    "pg": "^8.8.0"
+    "pg": "^8.11.0"
   }
 }
