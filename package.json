@@ -9,10 +9,10 @@
     "node": ">=18"
   },
   "dependencies": {
-    "directus": "^10.6.1",
+    "directus": "^10.10.7",
     "directus-extension-computed-interface": "^1.9.0",
     "directus-extension-upsert": "^1.0.5",
     "directus-extension-wpslug-interface": "^1.1.0",
-    "pg": "^8.11.3"
+    "pg": "^8.11.5"
   }
 }
